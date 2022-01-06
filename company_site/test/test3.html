@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css" integrity="sha512-uMIpMpgk4n6esmgdfJtATLLezuZNRb96YEgJXVeo4diHFOF/gqlgu4Y5fg+56qVYZfZYdiqnAQZlnu4j9501ZQ==" crossorigin="anonymous" />
+</head>
+<style>
+    .swiper-container{
+        width: 1000px;
+        /* height: 400px; */
+    }
+    img{
+        position: center;
+        width: 100%;
+        border-radius: 50px;
+    }
+    /* .swiper-button-prev,
+    .swiper-button-next{
+        color: aliceblue;
+        border: 2px solid black;
+        height: 100%;
+        width: 100px;
+    } */
+    .container{
+        display: flex;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        display: none;
+    }
+    .swiper-button2-prev,
+    .swiper-button2-next{
+        width: 5%;
+        background-color: aqua;
+    }
+
+    .swiper-wrapper{
+        width: 90%;
+    }
+</style>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js" integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww==" crossorigin="anonymous"></script>
+    <div class="container">
+        <div class="swiper-button2-prev"></div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./highlight1.png" alt=""></div>
+            <div class="swiper-slide"><img src="./highlight2.png" alt=""></div>
+            <div class="swiper-slide"><img src="./highlight3.png" alt=""></div>
+            </div>
+        </div>
+        <div class="swiper-button2-next"></div>
+    </div>
+    
+
+     <script>
+           var swiper = new Swiper('.swiper-container', {
+               loop: true,
+               navigation: {
+                   nextEl: '.swiper-button2-next',
+                   prevEl: '.swiper-button2-prev',
+                },
+                slidesPerView: 1,
+                breakpoints: {
+                    // 1000px以上
+                    1000: {
+                        slidesPerView: 3,
+                    },
+                }
+            });
+     </script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- header Area -->
+    <div class="header">
+      <div class="logo">
+        <h1>
+          <a href="index.html">
+            <img src="img/logo.png" alt="" />
+          </a>
+        </h1>
+      </div>
+      <div class="nav">
+        <ul>
+          <li>
+            <a href="index.html">TOP</a>
+          </li>
+          <li>
+            <a href="galleries.html">GALLERIES</a>
+          </li>
+          <li>
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li class="contact">
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-mobile">
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown" />
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content">
+            <ul>
+              <h1><a href="index.html">LOGO</a></h1>
+              <li>
+                <a href="index.html">TOP</a>
+              </li>
+              <li>
+                <a href="galleries.html">GALLERIES</a>
+              </li>
+              <li>
+                <a href="about.html">ABOUT</a>
+              </li>
+              <li class="contact">
+                <a href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- banner Area -->
+    <div class="banner">
+      <div class="banner-text">
+        <h2>
+          Lorem ipsum dolor sit amet.
+          <br />
+          consectetur adipisicing elit.
+        </h2>
+        <div class="button">
+          <a href="#">READ MORE</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- highlight Area -->
+    <div class="highlights">
+      <div class="div-title">
+        <h2>HIGHLIGHTS</h2>
+        <!-- <hr /> -->
+      </div>
+      <div class="button-lr">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+
+      <div class="item no1">
+        <figure>
+          <img src="img/highlight1.png" alt="" />
+          <figcaption>
+            <h3>Caption Title</h3>
+            <p>caption text here ...</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="item no2">
+        <figure>
+          <img src="img/highlight2.png" alt="" />
+          <figcaption>
+            <h3>Caption Title</h3>
+            <p>caption text here ...</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="item no3">
+        <figure>
+          <img src="img/highlight3.png" alt="" />
+          <figcaption>
+            <h3>Caption Title</h3>
+            <p>caption text here ...</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="button-lr">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+
+    <!-- members Area -->
+    <div class="members">
+      <div class="div-title">
+        <h2>MEMBERS!</h2>
+        <!-- <hr /> -->
+      </div>
+
+      <div class="button-lr">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div class="person no1">
+        <img src="img/person1.png" alt="" />
+        <h3>Name</h3>
+        <div class="description">Lorem ipsum dolor sit amet consectetur.</div>
+      </div>
+      <div class="person no2">
+        <img src="img/person2.png" alt="" />
+        <h3>Name</h3>
+        <div class="description">Lorem ipsum dolor sit amet consectetur.</div>
+      </div>
+      <div class="person no3">
+        <img src="img/person3.png" alt="" />
+        <h3>Name</h3>
+        <div class="description">Lorem ipsum dolor sit amet consectetur.</div>
+      </div>
+      <div class="button-lr">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+
+    <!--reservation Area  -->
+    <div class="reservation">
+      <div class="div-title">
+        <h2>Reservation Form</h2>
+        <!-- <hr /> -->
+      </div>
+
+      <div class="res-form">
+        <form action="" method="post">
+          <div class="left">
+            <label for="full-name">Full Name</label>
+            <input
+              type="text"
+              name="full-name"
+              id="full-name"
+              placeholder="FirstName Last Name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="email@mail.com"
+              required
+            />
+
+            <label for="phone-num">Phone Number</label>
+            <input
+              type="tel"
+              name="phone-num"
+              id="phone-num"
+              placeholder="+81 00-0000-0000"
+              pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+              required
+            />
+
+            <label for="res-date">Reservation Date</label>
+            <input type="date" name="res-date" id="res-date" required />
+
+            <input type="radio" name="time" id="am" value="Morning" required />
+            <label for="am" class="form-inline">Morning</label>
+            <br />
+
+            <input
+              type="radio"
+              name="time"
+              id="pm"
+              value="Afternoon"
+              required
+            />
+            <label for="pm" class="form-inline">Afternoon</label>
+          </div>
+
+          <div class="right">
+            <label for="">Additional Request</label>
+            <textarea
+              name="request"
+              id="request"
+              cols="30"
+              rows="10"
+              placeholder="Enter your requests here"
+            ></textarea>
+
+            <h3>Payment</h3>
+            <!-- <p>Payment Accepted Cards</p> -->
+
+            <label for="">Full Name</label>
+            <input
+              type="text"
+              name="cc-name"
+              id="cc-name"
+              placeholder="John Done"
+              required
+            />
+
+            <label for="cc-num">Credit Card Number</label>
+            <input
+              type="tel"
+              name="cc-num"
+              id="cc-num"
+              placeholder="4xxx-xxxx-xxxx-xxxx"
+              pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+              required
+            />
+
+            <p>
+              <label for="agree" class="form-inline">
+                I agree to the Terms & Conditions
+              </label>
+            </p>
+
+            <p><input type="checkbox" name="agree" id="agree" required /></p>
+          </div>
+          <input type="submit" id="send" value="Send" />
+          <!-- <button type="submit">Send</button> -->
+        </form>
+      </div>
+    </div>
+
+    <!-- footer Area -->
+    <div class="footer">
+      <!-- <div class="sns">
+            <div class="button twitter">
+                <i class="fab fa-twitter-square"></i>
+            </div>
+            <div class="button facebook">
+                <i class="fab fa-facebook-square"></i>
+            </div>
+            <div class="button instagram">
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2020 Camera</p>
+        </div> -->
+
+      <div class="sns">
+        <div class="space"></div>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram"></i>
+        <div class="space"></div>
+      </div>
+      <!-- <div class=“icons”>
+
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+
+            </div> -->
+
+      <!-- copyright -->
+
+      <div class="copyright">Copyright 2020</div>
+    </div>
+  </body>
+</html>

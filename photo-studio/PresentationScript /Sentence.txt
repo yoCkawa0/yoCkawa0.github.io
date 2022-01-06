@@ -1,0 +1,76 @@
+Hi Good Evening .
+I am Yoshikatsu Hayakawa.
+I will talk about my website and show it.
+It was difficult for me to code and it took longer than everyone else, but I did my best so please listen.
+ I use lorem and fontawsome a lot. Sorry.
+
+I created website of photo studio.
+The reason I decided to create this website is because I like photographs .
+
+This website consists of 4pages.
+“Top Gallaries About and Contact,”
+I made 3 pages and 1 pages copied a part.
+
+--------------------top
+First there is the banner.
+The banner has a button, but it is not working.
+
+Next is hightlight part.
+If I hover the image to see the description.
+
+Next is members part.
+I will explain the members here.
+By the way, I couldn't 
+the button didn’t work without js.
+
+next is reservation form.
+I can enter
+
+fullname
+email
+phone number
+etc…
+
+修正箇所
+It is sticking out.
+I should fix it here.
+
+finally.
+Three SNS buttons are lined up on the footer.
+
+
+---------------------gallaries
+I arranged the photos like tiles.
+In desktop view, 4 images are lined up side by side.
+In tablet view, 3 images are lined up side by side.
+this is first brake point.
+In mobile view, 2 images are lined up side by side.
+this is seccond brake point.
+
+If I click the image ,it will be larger.
+
+
+---------------------about
+This page is about us page.
+This page will explain our skills and addresses.
+but , I am using lorem and sample text.
+The skill part is colorfully highlighted.
+I put Google map in the address part.
+
+---------------------contact page
+This page is contact page.
+but , I didn’t create contact page, I copied a part of reservation form.
+
+
+-------------まとめ
+It was difficult to create ハンバーガーメニュー with only html and css.
+I spent a lot of time creating this part.
+
+And the part I like this hover animation. This is my commitment.like this.
+
+I haven’t had enough time to complete my website.
+I want to find time to improve my website.
+I want to study more.
+
+That’s all.
+Thank you for listening !

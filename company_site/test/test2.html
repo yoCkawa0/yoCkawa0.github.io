@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery with Pagination</title>
+​
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+​
+        .gallery {
+            width: 100%;
+            margin: 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+​
+        .gallery-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+        }
+​
+        .gallery-items .itemBox {
+            width: 25%;
+            padding: 1%;
+        }
+​
+        .gallery-items .itemBox.hide {
+            display: none;
+        }
+​
+        .gallery-items .itemBox.show {
+            display: block;
+        }
+​
+        .gallery-items .itemBox img {
+            width: 100%;
+        }
+​
+        .prev,
+        .next {
+            cursor: pointer;
+            /* position: absolute; */
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+            font-weight: bold;
+            font-size: 40px;
+            /* transform: translateY(-50%); */
+            display: block;
+        }
+        .prev {
+            left: 0;
+        }
+​
+        .next{
+            right: 0;
+        }
+​
+        .prev.disabled,
+        .next.disabled {
+            color: gray;
+            pointer-events: none;
+        }
+​
+        @media screen and (max-width: 426px) {
+​
+            .gallery-items {
+                justify-content: left;
+            }
+            .gallery-items,
+            .itemBox {
+                width: 50%;
+            }
+        }
+    </style>
+​
+​
+</head>
+<body>
+    <section class="gallery">
+        <span class="prev">&#10094;</span>
+​
+        <div class="gallery-items">
+            <div class="itemBox">
+                <div class="imgBox">
+                    <img src="images/food1.jpg" alt="" class="itemImg">
+                </div>
+                <p>
+                   1
+                </p> 
+            </div>
+    
+            <div class="itemBox">
+                <div class="imgBox">
+                    <img src="images/food1.jpg" alt="" class="itemImg">
+                </div>
+                <p>
+                   2
+                </p> 
+            </div>
+    
+            <div class="itemBox">
+                <div class="imgBox">
+                    <img src="images/food1.jpg" alt="" class="itemImg">
+                </div>
+                <p>
+                   3
+                </p> 
+            </div>
+    
+            <div class="itemBox">
+                <div class="imgBox">
+                    <img src="images/food1.jpg" alt="" class="itemImg">
+                </div>
+                <p>
+                   4
+                </p> 
+            </div>
+    
+            <div class="itemBox">
+                <div class="imgBox">
+                    <img src="images/food1.jpg" alt="" class="itemImg">
+                </div>
+                <p>
+                   5
+                </p> 
+            </div>
+    
+            <div class="itemBox">
+                <div class="imgBox">
+                    <img src="images/food1.jpg" alt="" class="itemImg">
+                </div>
+                <p>
+                   6
+                </p> 
+            </div>
+​
+            <div class="itemBox">
+                <div class="imgBox">
+                    <img src="images/food1.jpg" alt="" class="itemImg">
+                </div>
+                <p>
+                   7
+                </p> 
+            </div>
+​
+            <div class="itemBox">
+                <div class="imgBox">
+                    <img src="images/food1.jpg" alt="" class="itemImg">
+                </div>
+                <p>
+                   8
+                </p> 
+            </div>
+​
+            <div class="itemBox">
+                <div class="imgBox">
+                    <img src="images/food1.jpg" alt="" class="itemImg">
+                </div>
+                <p>
+                   9
+                </p> 
+            </div>
+​
+            <div class="itemBox">
+                <div class="imgBox">
+                    <img src="images/food1.jpg" alt="" class="itemImg">
+                </div>
+                <p>
+                   10
+                </p> 
+            </div>
+​
+            <div class="itemBox">
+                <div class="imgBox">
+                    <img src="images/food1.jpg" alt="" class="itemImg">
+                </div>
+                <p>
+                   11
+                </p> 
+            </div>
+​
+            <div class="itemBox">
+                <div class="imgBox">
+                    <img src="images/food1.jpg" alt="" class="itemImg">
+                </div>
+                <p>
+                   12
+                </p> 
+            </div>
+​
+            <div class="itemBox">
+                <div class="imgBox">
+                    <img src="images/food1.jpg" alt="" class="itemImg">
+                </div>
+                <p>
+                   13
+                </p> 
+            </div>
+​
+            <div class="itemBox">
+                <div class="imgBox">
+                    <img src="images/food1.jpg" alt="" class="itemImg">
+                </div>
+                <p>
+                   14
+                </p> 
+            </div>
+​
+            <div class="itemBox">
+                <div class="imgBox">
+                    <img src="images/food1.jpg" alt="" class="itemImg">
+                </div>
+                <p>
+                   15
+                </p> 
+            </div>
+​
+            <div class="itemBox">
+                <div class="imgBox">
+                    <img src="images/food1.jpg" alt="" class="itemImg">
+                </div>
+                <p>
+                   16
+                </p> 
+            </div>
+​
+            <div class="itemBox">
+                <div class="imgBox">
+                    <img src="images/food1.jpg" alt="" class="itemImg">
+                </div>
+                <p>
+                   17
+                </p> 
+            </div>
+​
+            <div class="itemBox">
+                <div class="imgBox">
+                    <img src="images/food1.jpg" alt="" class="itemImg">
+                </div>
+                <p>
+                   18
+                </p> 
+            </div>
+​
+            <div class="itemBox">
+                <div class="imgBox">
+                    <img src="images/food1.jpg" alt="" class="itemImg">
+                </div>
+                <p>
+                   19
+                </p> 
+            </div>
+​
+            <div class="itemBox">
+                <div class="imgBox">
+                    <img src="images/food1.jpg" alt="" class="itemImg">
+                </div>
+                <p>
+                   20
+                </p> 
+            </div>
+        </div>
+ 
+        <span class="next">&#10095;</span>
+    
+    </section>
+​
+    <script>
+        // we need to get how many children needed to be displayed
+        const galleryItems = document.querySelector('.gallery-items').children;
+        const prev = document.querySelector(".prev");
+        const next = document.querySelector(".next");
+        
+        let x = 8;
+​
+        // To check the size of the browser width
+        var newWidth = window.innerWidth;
+        // if the width is less than 426px (size of mobile)
+        if (newWidth <= 426) {
+            // we will use this as the number of items to be displayed
+            x = 6;
+        } else {
+            // we will use this as the number of items to be displayed
+            x = 8;
+        }
+​
+        // The maximum number of item
+        const maxItem = x;
+        let index = 1;
+​
+        const pagination = Math.ceil(galleryItems.length / maxItem);
+        // console.log(pagination);
+​
+        // this will create a pagination, so you can click the next and previous
+        prev.addEventListener('click', function(){
+            index--;
+            check();
+            showItems(); 
+        });   
+        next.addEventListener('click', function(){
+            index++;
+            check();
+            showItems();
+        });
+​
+        // we need to check if the how many pages. Disable the button next if there are no more items left
+        function check() {
+            if (index == pagination){
+                next.classList.add('disabled');
+            } else {
+                next.classList.remove('disabled');
+            }
+        // we need to check if the how many pages. Disable the button previous if there are no more items left
+            if (index == 1){
+                prev.classList.add('disabled');
+            } else {
+                prev.classList.remove('disabled');
+            }
+        }
+​
+        // to show the items
+        function showItems() {
+​
+            // check the index of items (how many items)
+            for (let i = 0; i < galleryItems.length; i++){
+                // first hide all items, so we add a class
+                galleryItems[i].classList.remove('show');
+                galleryItems[i].classList.add('hide');
+​
+                // if the item is 1-8, they will be displayed but if not, then go to next page
+                if (i >= (index * maxItem) - maxItem && i < index*maxItem){
+                    // if index=1 then (1*8)-8 = 8
+​
+                    // to show items
+                    galleryItems[i].classList.remove('hide');
+                    galleryItems[i].classList.add('show');
+                }
+            }
+​
+        }
+​
+        // everytime your user resize the page, it will reload the page
+        window.onresize = function(){ location.reload();}
+​
+        window.onload=function() {
+            showItems();
+            check();
+        }
+​
+    </script>
+</body>
+</html>

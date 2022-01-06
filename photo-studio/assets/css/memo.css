@@ -1,0 +1,45 @@
+/* footer Area */
+.footer{
+    border: solid black 1px;
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+.sns{
+    /* margin: 5% 25%; */
+    margin-left: 25%;
+    margin-right: 25%;
+    float: left;
+    width: 50%;
+    height: 50px;
+    border: solid black 1px;
+}
+.sns > .button{
+    /* .twitter,.facebook,.instagram */
+    /* margin: 0 auto; */
+    /* margin: 10%; */
+    margin-left: 10%;
+    margin-right: 10%;
+    float: left;
+    padding: 0;
+    width: 13.33%;
+    /* height: 13.33%; */
+    border: solid black 1px;
+    /* font-size: 2.5em; */
+}
+
+.button > i{
+    font-size: 2.0em;
+}
+
+.copyright{
+    /* display: block; */
+    float: left;
+    margin: 0 30%;
+    width: 40%;
+    height: 50px;
+    /* text-align: center; */
+    /* margin-left: 25%; */
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIANL</title>
+    
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <!-- <script src="./assets/js/test.js"></script> -->
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/js/swiper.js"></script> -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+
+    
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <h1>LOGO</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="#">Discover</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li class="login" id="js-show-popup">
+                    <a href="#">Login</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- mobile header Area -->
+        <div class="nav-mobile">
+            <div id="nav-drawer">
+              <input id="nav-input" type="checkbox" class="nav-unshown" />
+              <label id="nav-open" for="nav-input"><span></span></label>
+              <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+              <div id="nav-content">
+                <ul>
+                  <h1><a href="index.html" style="margin-left: 20px;">LOGO</a></h1>
+                  <li>
+                    <a href="index.html">Shop</a>
+                  </li>
+                  <li>
+                    <a href="galleries.html">Discover</a>
+                  </li>
+                  <li>
+                    <a href="about.html">About</a>
+                  </li>
+                  <li class="login">
+                    <a href="contact.html" style="margin-left: 0px;">Login</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+    </div>
+
+<!-- popup -->
+    <div class="popup" id="js-popup">
+        <div class="popup-inner">
+          <div class="close-btn" id="js-close-btn">
+              <i class="fas fa-times"></i>
+            </div>
+          <a href="#">
+              <img src="./images/top1.jpg" alt="">
+            </a>
+        </div>
+        <div class="black-background" id="js-black-bg"></div>
+      </div>
+
+
+    <!-- banner Area -->
+    <div class="banner">
+        <div class="right">
+            <h2>Welcome to<br>OurSite</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cum reprehenderit nobis alias, asperiores suscipit tempore iure! Iste, dicta iure!</p>
+            <div class="search">
+                <input type="text" name="" id="">
+                <button id="search">Suarch! <i class="fas fa-search"></i></button>    
+            </div>
+        </div>
+        <div class="left">
+            <img src="./images/wave1.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- Our Products Area -->
+    <div class="products">
+        <h3>Our Products</h3>
+        <!-- <div class="items">
+            <div class="left-btn">
+                <i class="fas fa-chevron-left fa-5x"></i>
+            </div>    
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="right-btn">
+                <i class="fas fa-chevron-right fa-5x"></i>
+            </div>
+        </div> -->
+        <!-- Swiper START -->
+        <div class="swiper-container">
+            <!-- メイン表示部分 -->
+            <div class="swiper-wrapper">
+                <!-- 各スライド -->
+                <div class="swiper-slide"><img src="./images/highlight/highlight1.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/highlight/highlight2.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/highlight/highlight3.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/highlight/highlight4.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/highlight/highlight5.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/highlight/highlight6.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/highlight/highlight7.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/highlight/highlight8.png" alt=""></div>
+
+            </div>
+        </div>
+        <!-- Swiper END -->
+        
+    </div>
+
+    <!-- ContactUs Area -->
+    <h3>Contact Us</h3>
+    <div class="contact">
+        <div class="right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12958.627135224153!2d139.8107004!3d35.7100627!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7d1d4fb31f43f72a!2sTokyo%20Skytree!5e0!3m2!1sen!2sjp!4v1605760644937!5m2!1sen!2sjp" width="350px" height="350px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="left">
+            <i class="fas fa-envelope-open-text"></i>
+            <br>
+            <!-- <p>support@xxx.com</p> -->
+            <i class="fas fa-phone"></i>
+            <br>
+            <!-- <p>03-1234-XXXX</p> -->
+            <i class="fas fa-map-marked-alt"></i>
+            <br>
+            <!-- <p>Tokyo Skytree<br>1 Chome 1-2<br>Psjoage,Sumida City,<br>Tokyo 131-8634</p> -->
+        </div>
+    </div>
+
+    <!-- form Area -->
+    <div class="contact2">
+        <div class="left">
+            <div class="image"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum hic vitae reprehenderit maxime dolor, labore tempora ut sunt natus magni.</p>
+        </div>
+        <div class="right">
+            <div class="form">
+                <label for="full-name">Full Name</label>
+                <input
+                type="text"
+                name="full-name"
+                id="full-name"
+                placeholder="FirstName Last Name"
+                required
+                />
+
+                <label for="phone-num">Phone Number</label>
+                <input
+                  type="tel"
+                  name="phone-num"
+                  id="phone-num"
+                  placeholder="+81 00-0000-0000"
+                  pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+                  required
+                />
+
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="email@mail.com"
+                  required
+                />  
+
+                <label for="">Description</label>
+                <textarea
+                  name="request"
+                  id="request"
+                  cols="30"
+                  rows="10"
+                  placeholder="Enter your requests here"
+                ></textarea>
+                <br>
+
+                <input type="submit" value="SEND">
+            </div>
+        </div>
+    </div>
+
+    <!-- Follow Area -->
+    <div class="follow">
+        <h3>Follow me!</h3>
+        <div class="sns-icons">
+            <i class="fab fa-twitter-square"></i>
+            
+            <i class="fab fa-facebook-square"></i>
+
+            <i class="fab fa-linkedin"></i>
+
+            <i class="fab fa-instagram-square"></i>
+
+            <i class="fab fa-pinterest-square"></i>
+
+            <i class="fab fa-github-square"></i>
+        </div>
+    </div>
+
+    <!-- Footer Area -->
+    <div class="footer">
+        <div class="hours">
+            <div class="box">
+                <h4>Business Hours</h4>
+                <h5>WeekDays</h5>
+                <p>09:00 ~ 21:00</p>
+                <h5>Weekends & Holidays</h5>
+                <p>10:00 ~ 20:00</p>
+            </div>
+        </div>
+
+        <div class="contact3">
+            <h4>Contact</h4>
+            <div class="box">
+                <h5 class="phone">Phone : </h5>
+                <p>03-1234-XXXX</p>
+                <h5 class="mail">Mail : </h5>
+                <p>support@xxx,com</p>
+                <!-- <h5 class="location">Location : </h5>
+                <p>Tokyo Skytree</p> -->
+
+                <!-- <h5 class="location">Location : </h5>
+                <p>Tokyo Skytree 1 Chome-1-2 Oshiage,Sumida City,Tokyo</p> -->
+            </div>
+        </div>
+
+        <div class="sitemap">
+            <h4>Site Map</h4>
+            <ul class="sitemap">
+                <li>Top</li>
+                <li>Shop</li>
+                <li>Discover</li>
+                <li>About</li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">Copyright 2020</div>
+
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            // centeredSlides : true,
+            loop: true,
+            // slidesPerView: 'auto',
+            slidesPerView: 3,
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+                reverseDirection: false
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            }
+        });
+        // Popup
+
+        function popupImage() {
+            var popup = document.getElementById('js-popup');
+            if(!popup) return;
+
+            var blackBg = document.getElementById('js-black-bg');
+            var closeBtn = document.getElementById('js-close-btn');
+            var showBtn = document.getElementById('js-show-popup');
+
+            closePopUp(blackBg);
+            closePopUp(closeBtn);
+            closePopUp(showBtn);
+            function closePopUp(elem) {
+                if(!elem) return;
+                elem.addEventListener('click', function() {
+                popup.classList.toggle('is-show');
+                });
+            }
+        }
+        popupImage();
+    </script>
+
+</body>
+</html>
